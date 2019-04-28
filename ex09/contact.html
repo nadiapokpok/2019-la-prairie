@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <html lang="fr">
+    <meta charset="UTF-8">
+    <link href="php.html">
+    <link href="sql.html">
+</head>
+<body>
+    <header></header>
+    <nav><ul>
+        <li> <a href="./sql.html">SQL.html</a></li>
+        <li> <a href="./index.html">index.html</a></li>
+        <li> <a href="./php.html">php.html</a></li>
+        <li> <a href="./contact.html">contact.html</a></li>
+    </ul></nav>
+    <section>
+        <form method="POST" action="traitement.php">
+            <fieldset>
+                <legend>Informations personnelles</legend>
+                <label for="nom">Nom:</label>
+                <input type="text" name="nom" id="nom" required>
+                <label for="prénom">Prénom:</label>
+                <input type="text" name="prénom" id="prénom" required><br>
+                <label for="mail">Email:</label>
+                <input type="text" name="mail" id="mail" required><br>
+                <label for="number">Age:</label>
+                <input type="number" name="number" id="number" min="3" max="99"><br>
+                <label for="tel">Numéro de téléphone</label>
+                <input type="tel" name="tel" id="tel" max="10"><br>
+                <label for="homme">Homme:</label>
+                <input type="radio" name="sexe" value="homme" id="homme">
+                <label for="homme">Femme:</label>
+                <input type="radio" name="sexe" value="femme" id="femme"><br>
+                <label for="color">Couleur préférée:</label>
+                <input type="color" name="color" value="#000" id="color">
+            </fieldset>
+            <fieldset>
+                <legend>Attentes et souhaits</legend>
+                <label for="choix-date">Choisir une date</label>
+                <input type="date" name="choix-date" id="choix-date" autocomplete><br>
+                choisir un langage de programmation
+                <select name="langage"><br>
+                    <option value="html">HTML</option>
+                    <option value="php">PHP</option>
+                    <option value="sql">SQL</option>
+                </select><br>
+                <label for="avis">
+                        Votre avis:
+                        </label>
+                        <br />
+                        <textarea name="avis" id="avis" rows="10" cols="50">
+                        </textarea>       
+            </fieldset>
+            <input type="submit" name="envoyer" value="Soumettre"/>
+        </form>
+    </section>
+</body>                     
+</html>           
+                   
+                    
+                        
+           
+            
+
+
+
+     
+  
+    
+    
